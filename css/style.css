@@ -1,0 +1,9 @@
+          #mon-portfolio-intro{
+              text-align: center;
+          }
+          hr.solid {
+              border-top: 3px solid #bbb;
+          }
+          body{
+               background-color: rgb(200, 200, 200)
+        }
