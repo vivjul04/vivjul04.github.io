@@ -4,20 +4,49 @@
         <title>Projet dérivé de "Défi : un voyage parfait"</title>
         <meta charset="utf-8">
     </head>
+
+    <style>
+#titre-voyage{
+  text-align: center;
+}
+
+body {
+	background: linear-gradient(-45deg, #ee3800, #e73c7e, #fc0075, #ffd5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s linear infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+    </style>
+
+
     <body>
-        <h1>Mon voyage Parfait</h1>
-        
-        <p>Il y aurait des scènes comme celle-ci...</p>
-        
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-sunset.png" alt="Colourful sunset at a beach" width="200">
-        
-        <p>Et des animaux comme celui-ci...</p>
-        
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/birds_rainbow-lorakeets.png" alt="Two colourful parrots on a railing" width="200">
-        
-        <p>Et je mangerais de la nourriture comme celle-ci...</p>
-        
-        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/fruits.png" alt="Variety of fruits including grapes pineapples and kiwis" width="200">
-        
+        <div id="titre-voyage">
+          <h1>Mon voyage Parfait</h1>
+        </div>
+
+        <table>
+          <tr>
+            <th> Paysages</th>
+            <th> Animaux</th>
+            <th> Nourriture</th>
+          </tr>
+          <tr>
+            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-sunset.png" width="200"></th>
+            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/birds_rainbow-lorakeets.png" width="200"></th>
+            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/fruits.png" width="225"></th>
+          </tr>
+          </table>
     </body>
 </html>
