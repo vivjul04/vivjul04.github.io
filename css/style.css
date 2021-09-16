@@ -1,10 +1,28 @@
-          #mon-portfolio-intro{
-              text-align: center;
-          }
-          hr.solid {
-              border-top: 3px solid #bbb;
-          }
-          body{
-          background: rgb(0,36,7);
-          background: linear-gradient(90deg, rgba(0,36,7,1) 0%, rgba(117,232,155,1) 50%, rgba(14,69,63,1) 100%);
-        }
+      #mon-portfolio-intro{
+        text-align: center;
+      }
+      hr.solid {
+        border-top: 3px solid #bbb;
+      }
+      #mes-projets{
+        font-size:20px ;
+      }
+      
+      body {
+	background: linear-gradient(-45deg, #ee3800, #e73c7e, #fc0075, #ffd5ab);
+	background-size: 400% 400%;
+	animation: gradient 5s linear infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
