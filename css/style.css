@@ -2,17 +2,47 @@
         text-align: center;
       }
       hr.solid {
-        border-top: 3px solid #bbb;
+        border-top: 3px solid rgb(0, 0, 0);
       }
-      #mes-projets{
-        font-size:20px ;
-      }
+      .mes-projets{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }   
       
+      .biographie{
+        transition: transform .2s;
+        margin-left: 45%;
+        margin-right: 50%;
+      }
+      .biographie:hover{
+        transform: scale(1.5);
+      }
+
+      .poeme{
+        transition: transform .2s;
+        margin-left: 45%;
+        margin-right: 50%;
+      }
+      .poeme:hover{
+        transform: scale(1.5);
+      }
+
+      .voyage{
+        transition: transform .2s;
+        margin-left: 45%;
+        margin-right: 50%;
+      }
+      .voyage:hover{
+        transform: scale(1.5);
+      }
+
       body {
 	background: linear-gradient(-45deg, #ee3800, #e73c7e, #fc0075, #ffd5ab);
 	background-size: 400% 400%;
 	animation: gradient 5s linear infinite;
 	height: 100vh;
+  font-family: helvetica;
 }
 
 @keyframes gradient {
@@ -25,4 +55,7 @@
 	100% {
 		background-position: 0% 50%;
 	}
+}
+* {
+  box-sizing: border-box;
 }
