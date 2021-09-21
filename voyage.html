@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
-        <title>Projet dérivé de "Défi : un voyage parfait"</title>
+        <title>Mon Voyage Parfait</title>
         <meta charset="utf-8">
     </head>
 
@@ -11,11 +11,18 @@
   text-align: center;
 }
 
+#paragraphe-voyage{
+  text-align: center;
+  width: 400px;
+  margin-left: 40%;
+}
+
 body {
 	background: linear-gradient(-45deg, #ee3800, #e73c7e, #fc0075, #ffd5ab);
 	background-size: 400% 400%;
 	animation: gradient 5s linear infinite;
 	height: 100vh;
+  font-family: helvetica;
 }
 
 @keyframes gradient {
@@ -34,20 +41,28 @@ body {
 
     <body>
         <div id="voyage">
-          <h1>Mon voyage Parfait</h1>
-        
-        <table>
+          <h1>Mon Voyage Parfait</h1>
+        <table style="border:2px solid black;margin-left:auto;margin-right:auto;">
           <tr>
             <th> Paysages</th>
             <th> Animaux</th>
             <th> Nourriture</th>
           </tr>
           <tr>
-            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-sunset.png" width="200"></th>
-            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/birds_rainbow-lorakeets.png" width="200"></th>
-            <th><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/fruits.png" width="225"></th>
+            <td><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/landscapes/beach-sunset.png" width="200"></td>
+            <td><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/animals/birds_rainbow-lorakeets.png" width="200"></td>
+            <td><img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/food/fruits.png" width="225"></td>
+          </tr>
+          <tr>
+            <td><img src="https://images.unsplash.com/photo-1460627390041-532a28402358?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YmVhY2glMjBzdW5zZXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80" width="200"></td>
+            <td><img src="https://spca.bc.ca/wp-content/uploads/monkey-in-wild-cute-eye-contact-825x456.jpg" width="240"></td>
+            <td><img src="http://colombianfruit.org/wp-content/uploads/2020/10/granadilla_kopieeren-e1604082612582.png" width="150"></td>
           </tr>
           </table>
+          <br>
+          <p id="paragraphe-voyage"> Mon voyage parfait serait dans un pays en <b>Amérique du Sud</b>, où la température est vraiment <i>agréable</i>. J'irais à la plage à tous les jours pour profiter des belles <b>plages</b>. Ensuite, j'observerais totues sortes d'animaux qui vivent là-bas, comme les singes et les oiseaux. Finalement, je mangerais toutes sortes de fruits tropicaux tels que la "grandilla" (photo en haut). Je suis certain qu'ils auront un goût <b><i>merveilleux</i></b>.</p>
+          <br>
+          <br>
 	<a href="index.html"> Retour à la page d'accueil </a>
 	    </div>
 
