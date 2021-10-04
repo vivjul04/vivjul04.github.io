@@ -34,11 +34,49 @@
     <br>
     <div class="voyage"> 
       <a href="voyage.html"><img src="https://cdn.pixabay.com/photo/2012/04/10/17/24/airplane-26560_960_720.png" width="200px"/></a>
-    </div>
+      </div>
     <br>
     <p style= "text-align: center">Cliquez sur l'avion pour voir mon voyage parfait</p>
     <br>
-</div>
+<!-- CALCULATRICE -->
+    <a href="calculatrice.html"> Programme Calculatrice </a>
 
+<!-- CAISSE MULtI ITEMS -->
+
+<button onclick= "alert('allo')">Click me</button>
+<!-- PROGRAMME BONJOUR -->
+<script>
+  let nowDate = new Date();
+let now = nowDate.getHours();
+ 
+if (now >=3 && now <=11){
+  alert("Bon matin! Il est " + now + " heures.");
+}else{
+  if (now >=12 && now <=16){
+    alert("Bonjour! Il est " + now + " heures.");
+  }else{
+    if (now >=17 && now <=20){
+      alert("Il est " + now + " heures. Bonne soirée!");
+    }else{
+      if (now >=21 && now <=24){
+        alert("Il est " + now + " heures. Bonne nuit!");
+      }else{
+        if (now === 1 || now === 2){
+          alert("Il est " + now + " heures! Tu devrais être au lit!");
+        }else{
+          if (isNaN(now)){
+            alert("Choisis l'heure en chiffres!");
+          }else{
+            if (now > 24){
+              alert("Choisis un nombre entre 1 et 24.");
+            }
+          }
+        }
+      }
+    }
+  }
+}
+</script>
+    
     </body>
 </html>
