@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Calculatrice</title>
+        <meta charset="utf-8">
+    </head>
+<body>
+
+  <h1> ALLO</h1>
+<script>
+// Definir les variables
+var num1 = parseInt(prompt("Choisis un nombre"), 10);
+var operation = prompt("Quel type d'operation veux-tu utiliser? Les choix sont: +, -, *, /, %");
+var num2 = parseInt(prompt("Choisis un deuxieme nombre"), 10);
+var reponse;
+
+// Appel a la fonction
+calcul(num1, num2);
+
+// Afficher la reponse
+alert(num1 + " " + operation + " " + num2 + " = " + reponse);
+
+// Fonction Calcul
+function calcul (num1, num2){
+  if (operation === "+"){
+      reponse = num1 + num2;
+  }else{
+    if (operation === "-"){
+      reponse = num1 - num2;
+    }else{
+      if (operation === "*"){
+        reponse = num1 * num2;
+      }else{
+        if (operation === "/"){
+          reponse = num1 / num2;
+        }else{
+          if (operation === "%"){
+            reponse = modulo(num1, num2);
+              }
+            }
+          }
+        }
+      }
+    }
+
+// Fonction Modulo
+function modulo(num1, num2){
+  var division = num1 / num2;
+  division = Math.floor(division);
+  var reste = num1 - num2*division;
+  return reste;
+  }
+</script>
+</body>
+</html>
